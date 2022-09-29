@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mangarg-Inicio de sesion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../Img/Logotemporal.png">
+</head>
+<!-- encabezado -->
+<header class="header">
+    <div class="contenedor wow animate__animated animate__backInRight">
+    <a class="header--logo" href="./index.html">
+        <img src="./Img/Logotemporal.png" alt="LogoMangarg" width="200 px">
+    </a>
+    <a class="header--inicio" href="../pages/sesion.html">Inicio de sesion 
+    </a>
+    <a class="header--carrito " href="../pages/carrito.html">Mi carrito 
+    </a>
+</div>
+</header>
+<!-- encabezado fin -->
+<!-- menu -->
+<nav class="navbar navbar-expand-lg ">
+    <div class="barraDeMenu">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Catalogo Completo</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Editoriales
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://tiendapanini.com.ar/">Panini</a></li>
+                        <li><a class="dropdown-item" href="https://www.ivrea.com.ar/">Ivrea</a></li>
+                        <li>
+                        </li>
+                        <li><a class="dropdown-item" href="https://www.ovnipress.net/">Ovni Press</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Sobre Nosotros</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+</div>
+<body>
+    <main class="main">
+
+        <!-- !ACCOUNT SESION CONTENT -->
+        <section class="containerNewUser" id="containerUser">
+
+            <!-- *Formulario de REGISTRO -->
+            <form id="formRegister" class="form">
+                <div class="header">
+                    <h2 class="secondTitle">No tienes cuenta? Crea una.</h2>
+                </div>
+                <div class="form-control">
+                    <label for="username">Usuario</label>
+                    <input type="text" placeholder="Ejemplo.usuario" id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>errorMessage</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="correo electronico" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>errorMessage</small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Contraseña</label>
+                    <input type="password" placeholder="*****" id="password" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>errorMessage</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2">Repite tu contraseña</label>
+                    <input type="password" placeholder="*****" id="password2" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>errorMessage</small>
+                </div>
+                <button>registrate</button>
+                <button type="reset" class="btn btn-primary formBtnCreate"><i class="fa-regular fa-ban"></i></button>
+            </form>
+
+            <!-- *Formulario de LOGEO -->
+            <form id="formLogin" class="form hiddeContent">
+                <div class="header">
+                    <h2 class="secondTitle">Inicia sesion</h2>
+                </div>
+                <div class="form-control">
+                    <label for="username">Usuario</label>
+                    <input type="text" placeholder="Ejemplo.usuario" id="validUsername" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>errorMessage</small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Contraseña</label>
+                    <input type="password" placeholder="********" id="validPassword" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Errormessage</small>
+                </div>
+                <button>Inciar Sesion</button>
+            </form>
+        </section>  
+
+    </main>
+
+    <!-- !SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/4ec5a32e2a.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sesion.js" type="module"></script>
+</body>
+
+</html>

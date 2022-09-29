@@ -1,0 +1,146 @@
+/* fuentes externas de letras */
+@font-face {
+    font-family: 'Heycomic';
+    src: url(../Fuentes/Hey\ Comic.ttf);
+}
+
+@font-face {
+    font-family: 'IBMPlexSerif';
+    src: url(../Fuentes/IBMPlexSerif-Bold.ttf);
+}
+/* fuentes externas de letras */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* arreglar header y ponerlo pegado a la derecha */
+header {
+    background-color: #D37A47;
+    width: 100%;
+    align-items: center;
+    font-family: 'IBMPlexSerif';
+    display: flex;
+    flex-direction: column;
+    color: white;
+    grid-area: header;
+}
+.header--inicio{
+    font-family: 'IBMPlexSerif';
+    color: white;
+    text-decoration: none;
+}
+.header--inicio:hover{
+    opacity: 50%;
+}
+.header--carrito{
+    font-family: 'IBMPlexSerif';
+    color: white;
+    text-decoration: none;
+
+}
+.header--carrito:hover{
+    opacity: 50%;
+}
+nav{
+    background-color: #D37A47;
+    height: 60px;
+}
+.barraDeMenu{
+    margin-bottom: 30px;
+}
+body {
+     overflow: hidden; /*(revisar porque se crea el scrool) */
+  }
+
+
+/*! Main */
+
+.main {
+    width: 100%;
+    background-color: #DFC7A3;
+    height: 2000px;
+    grid-area: main;
+}
+
+/* !Login */
+
+.containerNewUser {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 20%;
+    text-align: center;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control i {
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+    color: green;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: red;
+    visibility: visible;
+    
+}
+
+.form-control small {
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+.form button {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: black;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.btn-primary {
+    visibility: hidden;
+}
+
+.hiddeContent {
+    display: none;
+}
